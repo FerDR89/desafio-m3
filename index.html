@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fernando de Row" />
+    <meta name="keywords" content="maqueta, Css, HTML, Flexbox, Grid" />
+    <meta name="description" content="Mi primer site personal" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Open Sans font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+
+    <title>FDR</title>
+  </head>
+
+  <body>
+    <header class="contenedor-header">
+      <div class="contenedor-logo">
+        <img
+          src="/src/logos/logo-marca-blanco.svg"
+          alt="Logo corporativo"
+          class="logo-header"
+        />
+      </div>
+      <nav class="nav-links">
+        <div class="linea-desplegable"></div>
+        <div class="linea-desplegable"></div>
+        <div class="linea-desplegable"></div>
+        <a href="" class="link-quien-soy">Quien soy</a>
+        <a href="" class="link-servicios">Servicios</a>
+        <a href="" class="link-escribime">Escribíme</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contenedor-portada">
+        <div class="contenedor-titulo">
+          <h1 class="titulo-principal">Bienvenid@s a mi site</h1>
+        </div>
+        <div class="contenedor-img-personal">
+          <img
+            src="/src/img/img-personal.jpg"
+            alt="Imágen Fernando"
+            class="img-personal"
+          />
+        </div>
+      </section>
+      <section class="quien-soy-conentedor">
+        <div class="quien-soy-contenedor-elementos">
+          <h2 class="titulo-quien-soy">Hola Mundo!</h2>
+          <p class="acerca-de-mi">
+            Mi nombre es Fernando y actualmente me encuentro estudiando
+            desarrollo web.<br />
+
+            Por curiosidad, comence en medio de la pandemia a investigar y
+            explorar un poco sobre esta rama de la tecnología y, despúes de unos
+            meses de tutoriales, mucha lectura y algo de codigo, decidí que es a
+            lo que quiero enforcar mi carrera profesional en el mediano/largo
+            plazo.<br />
+
+            Soy una persona curiosa, proactiva y en busca de desafíos constantes
+            que pongan a prueba mi capacidad de adaptarme y aprender nuevas
+            tecnologías.
+          </p>
+          <img
+            src="/src/logos/logo-marca-blanco.svg"
+            alt="Logo corporativo"
+            class="logo-quien-soy"
+          />
+        </div>
+      </section>
+      <section class="servicios-contenedor">
+        <h2 class="titulo-mis-servicios">Mis servicios</h2>
+        <div class="servicios-contenedor-elementos">
+          <div class="servicios-primer-elemento">
+            <img
+              src="/src/logos/logo-pc.svg"
+              alt="Imágen de PC"
+              class="servicios-logo-pc"
+            />
+            <h3 class="subtitulo-hago-cosas">Hago cosas</h3>
+            <p class="parrafo-hago-cosas">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </div>
+          <div class="servicios-segundo-elemento">
+            <img
+              src="/src/logos/logo-pc.svg"
+              alt="Imágen de PC"
+              class="servicios-logo-pc"
+            />
+            <h3 class="subtitulo-hago-cosas">Hago cosas</h3>
+            <p class="parrafo-hago-cosas">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </div>
+          <div class="servicios-tercer-elemento">
+            <img
+              src="/src/logos/logo-pc.svg"
+              alt="Imágen de PC"
+              class="servicios-logo-pc"
+            />
+            <h3 class="subtitulo-hago-cosas">Hago cosas</h3>
+            <p class="parrafo-hago-cosas">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contenedor-formulario">
+        <h2 class="titulo-escribeme">Escríbeme</h2>
+        <div class="contenedor-fieldsets">
+          <div class="fieldset-input-nombre">
+            <label for="input-nombre" class="label-input-nombre">Nombre</label>
+            <input type="text" id="input-nombre" class="input-nombre" />
+          </div>
+          <div class="fieldset-input-email">
+            <label for="input-email" class="label-input-email">Email</label>
+            <input type="email" id="input-email" class="input-email" />
+          </div>
+          <div class="fieldset-textarea">
+            <label for="textarea" class="label-input-textarea">Mensaje</label>
+            <textarea id="textarea" class="input-textarea"></textarea>
+          </div>
+        </div>
+        <div class="contenedor-button">
+          <button class="button">Enviar</button>
+        </div>
+      </section>
+    </main>
+    <footer class="contenedor-footer">
+      <div class="contenedor-logo-corporativo-footer">
+        <img
+          src="/src/logos/logo-marca-blanco.svg"
+          alt="Logo corporativo"
+          class="logo-corporativo-footer"
+        />
+        <p class="parrafo-copyright">© 2021 FDR89</p>
+      </div>
+      <div class="contenedor-redes-sociales">
+        <a
+          href="https://www.linkedin.com/in/fernando-emmanuel-de-row-396482b0"
+          target="_blank"
+          class="links-footer"
+        >
+          <img
+            src="/src/logos/logotipo-de-linkedin.svg"
+            alt="Logo Linkedin"
+            class="logo-linkedin-footer"
+          />
+        </a>
+        <a
+          href="https://github.com/FerDR89"
+          target="_blank"
+          class="links-footer"
+        >
+          <img
+            src="/src/logos/github.svg"
+            alt="Logo GitHub"
+            class="logo-github-footer"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

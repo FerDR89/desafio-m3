@@ -1,0 +1,503 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: rgb(12, 12, 223);
+}
+
+/* Header */
+.contenedor-header {
+  max-width: 375px;
+  height: 78px;
+  padding: 18px 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 376px) {
+  .contenedor-header {
+    max-width: 100%;
+    height: 175px;
+    padding: 36px 80px 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contenedor-logo {
+  max-width: 54px;
+  max-height: 50px;
+}
+
+@media (min-width: 376px) {
+  .contenedor-logo {
+    max-width: 95px;
+    max-height: 110px;
+  }
+}
+
+.logo-header {
+  max-width: 100%;
+  height: 50px;
+  border-radius: 25%;
+  background-color: rgb(10, 245, 10);
+}
+
+@media (min-width: 376px) {
+  .logo-header {
+    height: 110px;
+  }
+}
+
+.nav-links {
+  width: 36px;
+  height: 32px;
+  display: grid;
+  align-items: center;
+  gap: 7px;
+}
+
+@media (min-width: 376px) {
+  .nav-links {
+    width: 450px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.linea-desplegable {
+  width: 100%;
+  height: 6px;
+  background-color: black;
+}
+
+@media (min-width: 376px) {
+  .linea-desplegable {
+    display: none;
+  }
+}
+
+.link-quien-soy,
+.link-servicios,
+.link-escribime {
+  display: none;
+}
+
+@media (min-width: 376px) {
+  .link-quien-soy,
+  .link-servicios,
+  .link-escribime {
+    display: inherit;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+  }
+  .link-quien-soy:hover {
+    color: greenyellow;
+    font-weight: bold;
+  }
+  .link-servicios:hover {
+    color: greenyellow;
+    font-weight: bold;
+  }
+  .link-escribime:hover {
+    color: greenyellow;
+    font-weight: bold;
+  }
+}
+/* Portada */
+.contenedor-portada {
+  max-width: 375px;
+  height: 565px;
+  padding: 84px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 376px) {
+  .contenedor-portada {
+    max-width: 100%;
+    height: 450px;
+    padding: 50px 80px 0px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contenedor-titulo {
+  max-width: 296px;
+  max-height: 96px;
+}
+
+.titulo-principal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 46px;
+  margin: 0;
+  text-align: center;
+  line-height: 48px;
+}
+.contenedor-img-personal {
+  width: 318px;
+  height: 300px;
+}
+
+@media (min-width: 376px) {
+  .contenedor-img-personal {
+    width: 435px;
+    height: 395px;
+  }
+}
+
+.img-personal {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Quien Soy */
+.quien-soy-conentedor {
+  max-width: 375px;
+  height: 538px;
+  padding: 55px 30px 68px 30px;
+  background-color: #141414;
+  color: #fafafa;
+}
+
+@media (min-width: 376px) {
+  .quien-soy-conentedor {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.quien-soy-contenedor-elementos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 376px) {
+  .quien-soy-contenedor-elementos {
+    display: grid;
+    grid-template-columns: 211px 532px;
+    grid-template-rows: 44px 165px;
+    column-gap: 90px;
+    row-gap: 28px;
+  }
+}
+
+.titulo-quien-soy {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 376px) {
+  .titulo-quien-soy {
+    margin: 0px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.acerca-de-mi {
+  margin: 5px 0 0 0;
+}
+
+@media (min-width: 376px) {
+  .acerca-de-mi {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+  }
+}
+
+.logo-quien-soy {
+  width: 80px;
+  height: 80px;
+  margin-top: 25px;
+  border-radius: 25%;
+  background-color: rgb(10, 245, 10);
+}
+
+@media (min-width: 376px) {
+  .logo-quien-soy {
+    width: 211px;
+    height: 211px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+  }
+}
+
+/* Servicios */
+.servicios-contenedor {
+  max-width: 375px;
+  height: 1375px;
+  padding: 50px 52px 66px 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 376px) {
+  .servicios-contenedor {
+    max-width: 100%;
+    height: 605px;
+    padding: 59px 60px 105px 60px;
+  }
+}
+
+.servicios-contenedor-elementos {
+  width: 100%;
+  height: 100%;
+  padding-top: 39px;
+  display: grid;
+  gap: 50px;
+}
+
+@media (min-width: 376px) {
+  .servicios-contenedor-elementos {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 150px;
+  }
+}
+
+.titulo-mis-servicios {
+  font-size: 32px;
+}
+
+@media (min-width: 376px) {
+  .titulo-mis-servicios {
+    margin-top: 0px;
+  }
+}
+
+.servicios-primer-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicios-segundo-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicios-tercer-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitulo-hago-cosas {
+  margin-bottom: 0px;
+  font-size: 24px;
+}
+
+.parrafo-hago-cosas {
+  text-align: center;
+}
+
+.servicios-logo-pc {
+  width: 138px;
+  height: 129px;
+}
+
+/* Contacto */
+.contenedor-formulario {
+  max-width: 375px;
+  height: 660px;
+  padding: 65px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+@media (min-width: 376px) {
+  .contenedor-formulario {
+    max-width: 100%;
+    height: 660px;
+    padding: 100px 200px;
+    display: grid;
+    grid-template-columns: 271px 376px;
+    column-gap: 77px;
+    background-color: black;
+  }
+}
+
+.titulo-escribeme {
+  margin-top: 0px;
+  margin-bottom: 37px;
+  color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+}
+
+@media (min-width: 376px) {
+  .titulo-escribeme {
+    margin: 0px;
+    grid-column: 1/2;
+    align-self: start;
+    font-size: 48px;
+  }
+}
+
+.contenedor-fieldsets {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 20px;
+}
+
+.fieldset-input-nombre {
+}
+
+.label-input-nombre {
+  margin-bottom: 9px;
+  display: block;
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+.input-nombre {
+  width: 100%;
+  height: 45px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.fieldset-input-email {
+}
+
+.label-input-email {
+  margin-bottom: 9px;
+  display: block;
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+.input-email {
+  width: 100%;
+  height: 45px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.fieldset-textarea {
+}
+
+.label-input-textarea {
+  margin-bottom: 9px;
+
+  display: block;
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+.input-textarea {
+  width: 100%;
+  height: 113px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.contenedor-button {
+  width: 100%;
+}
+
+@media (min-width: 376px) {
+  .contenedor-button {
+    grid-column: 2/3;
+  }
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #ffd953;
+  border-radius: 10px;
+}
+
+/* Footer */
+.contenedor-footer {
+  max-width: 375px;
+  height: 493px;
+  padding: 50px 20px 110px 20px;
+  display: grid;
+  gap: 80px;
+  background-color: #c4c4c4;
+}
+
+@media (min-width: 376px) {
+  .contenedor-footer {
+    max-width: 100%;
+    height: 346px;
+    padding: 100px 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contenedor-logo-corporativo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-corporativo-footer {
+  width: 75px;
+  height: 75px;
+  border-radius: 25%;
+  background-color: rgb(10, 245, 10);
+}
+
+.parrafo-copyright {
+  font-size: 13px;
+}
+
+.contenedor-redes-sociales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.links-footer {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-linkedin-footer {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(10, 245, 10);
+  border-radius: 25%;
+}
+.logo-github-footer {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(10, 245, 10);
+  border-radius: 48%;
+}
